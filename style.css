@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background: rgb(236,240,243);
+    background: linear-gradient(90deg, rgba(236,240,243,1) 20%, rgba(223,223,223,1) 100%);
+}
+
+.profile-div{
+    width: 430px;
+    height: 430px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff;
+}
+
+.logo{
+    background: url("./image/profile2.jpg");
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 
+    /* logo shadow  */
+    0px 0px 2px #5f5f5f,
+
+    /* OFFSET  */
+    0px 0px 0px 5px #ecf0f3,
+
+    /* Bottom right */
+    8px 8px 15px #a7aaaf,
+
+    /* top left */
+    -8px -8px 15px #ffffff;
+}
+
+.title{
+    text-align: center;
+    font: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+}
+
+.sub-title{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px; 
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    display: flex;
+    background: #e3edf7;
+    width: 75px;
+    height: 50px;
+    margin: 25px 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s;
+
+}
+
+a i {
+    font-size: 24px;
+    color: #777;
+    transition: transform 0.5s;
+}
+
+a:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transform: translateY(2px);
+}
+
+a:hover i{
+    transform: scale(0.90);
+}
+
+
+
+a:hover .fa-github{
+    color: #24292e;
+}
+
+a:hover .fa-behance{
+    color: #0057ff;
+}
+
+a:hover .fa-linkedin{
+    color: #0077b5;
+}
+
+a:hover .fa-google{
+    color: red;
+}
